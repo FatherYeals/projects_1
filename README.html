@@ -1,1 +1,138 @@
-# projects_1
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+h1{
+    text-align: center;
+    font-weight: 100;
+    background-color: rgb(255, 105, 180);
+    color: white;
+    padding: 50px, 100px 50px,100px;
+    margin: 100px auto;
+    transition:linear;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+h1:hover{
+    color:red;
+    background: black;
+
+
+}
+body{
+    background: black;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+h3 {
+
+    color: white;
+    text-align: center;
+}
+
+.intro{
+    color: white;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+img{
+    display: block;
+    margin: 0 auto; 
+    padding: 20px;
+    border: 2px solid hotpink;
+    border-radius: 50%;
+}
+input{
+    display: block;
+    margin: 0 auto;
+}
+
+.submit{
+
+    display: block; 
+    background:rgb(230, 105, 167);
+    margin: 0 auto; 
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px hotpink;
+    transition: all 200ms ease-in-out;
+}
+
+button{
+    display: block; 
+    background:rgb(230, 105, 167);
+    margin: 0 auto; 
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px hotpink;
+    transition: all 200ms ease-in-out;
+}
+
+button:hover {
+background:black;
+color:white;
+cursor: pointer;
+
+}
+
+.submit:hover {
+
+background:black;
+color:white;
+cursor: pointer;
+
+}
+
+    </style>
+</head>
+<body>
+<div class = "webPrjo">
+<h1>Introduction</h1>
+<p class="intro">
+    Hi! Welcome to my online life journal where I talk about
+what's going on in my life. <br> My struggles, my insecurities,<br>
+    college(which is not going right for me so far, 2020 am I right?)<br>  <em>boys</em>, family
+    and saved the best for last, my <strong> Pets!</strong>
+</p>
+</div>
+<img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/003/412/original/Yealie.jpg?1604678990"
+width="250" height="400" alt="That's me!">
+
+<br>
+
+<button onclick="location.href = 'https://www.instagram.com/yealiee/?hl=en'" type = "button">  
+    Follow me on Instagram!  
+</button>
+<h3>Subscribe to email alerts for updates! </h3>
+<input placeholder="Enter Email Address">
+<button class = "submit">Submit</button>
+
+<script>
+function contactUS(){
+
+let name = prompt("What is your name?");
+
+let h3 = document.querySelector("h3");
+
+h3.innerHTML =`Thank you  ${name}! stay tuned for more content!`;
+}
+
+let contactButton = document.querySelector(".submit");
+
+contactButton.addEventListener("click", contactUS);
+
+  //  The code above allows function to be called on when clicking
+  // the button
+</script>
+
+
+</body>
+</html>
